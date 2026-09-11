@@ -1,0 +1,20 @@
+name: morphometrics_pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.5.2
+  - r-geomorph=4.1.0
+  - r-mvmorph=1.2.1
+  - r-phytools=2.5_2
+  - r-rphylopars=0.3.10
+  - r-vegan=2.7_3
+  - r-viridis=0.6.5
+  - r-plotly=4.12.0
+  - r-shiny=1.13.0
+  - r-ggplot2=4.0.2
+  - r-dplyr=1.2.0
+  - bioconductor-ggtree=4.0.4
+  - r-biocmanager=1.30.27
+  - r-rrpp=2.1.2
