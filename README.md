@@ -121,6 +121,7 @@ directly in the notebook itself.
 conda install -c conda-forge notebook r-irkernel
 R -e "IRkernel::installspec()"
 ```
+*This step is optional in case Jupyter is not installed*
 
 3. Launch Jupyter from the project folder:
 ```bash
