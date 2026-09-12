@@ -83,15 +83,24 @@ conda env create -f environment.yml
 conda activate morphometrics_pipeline
 ```
 
-4. Open RStudio and set the working directory to the project folder
+4. Since, `geomorph` and `mvMORPH` are not distributed on
+   conda-forge/bioconda, after activating the environment on step 3, install their
+   CRAN versions. In the command line of your terminal run:
+
+```bash
+R -e 'remotes::install_version("geomorph", version = "4.1.0"); remotes::install_version("mvMORPH", version = "1.2.1")'
+```
+
+
+5. Open RStudio and set the working directory to the project folder
     - In the top menu bar, go to Session
     - Select Set Working Directory
     - Click Choose Directory...
     - Navigate to your folder (where you cloned the git repository) and click Open 
 
-5. Run the .R script and access the Shiny web app.
+6. Run the .R script and access the Shiny web app.
 
-6. Load Data: Within the app, upload the *data/example_data.txt* file to see the primate cranial configuration simulation.
+7. Load Data: Within the app, upload the *data/example_data.txt* file to see the primate cranial configuration simulation.
 
 <br>
 
@@ -105,12 +114,7 @@ mathematical background (BM/OU equations, GPA/PCA, Mantel test) embedded
 directly in the notebook itself.
 
 1. Clone the repository and create the conda environment as described above
-   (steps 1-3). Note: `geomorph` and `mvMORPH` are not distributed on
-   conda-forge/bioconda, so after activating the environment, install them
-   from CRAN:
-```bash
-R -e 'install.packages(c("geomorph", "mvMORPH"))'
-```
+   (steps 1-4). 
 
 2. Install Jupyter and the R kernel into the same environment:
 ```bash
@@ -123,7 +127,7 @@ R -e "IRkernel::installspec()"
 jupyter notebook
 ```
 
-4. Open `phylomorphospace_workflow.ipynb`, confirm the **R** kernel is
+4. Open `morphospace_workflow.ipynb`, confirm the **R** kernel is
    selected (top right), then go to **Kernel → Restart & Run All**. The
    notebook downloads the example dataset directly from this repository, so
    no manual file upload is needed, every figure, table, and diagnostic
