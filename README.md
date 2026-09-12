@@ -94,6 +94,42 @@ conda activate morphometrics_pipeline
 6. Load Data: Within the app, upload the *data/example_data.txt* file to see the primate cranial configuration simulation.
 
 <br>
+
+## Running the Jupyter Notebook
+
+Alongside the Shiny app, this repository's analysis is also available as a
+self-contained, reproducible Jupyter notebook
+(`morphospace_workflow.ipynb`), which runs the same pipeline as a
+linear, documented sequence of cells, with all figures, tables, and
+mathematical background (BM/OU equations, GPA/PCA, Mantel test) embedded
+directly in the notebook itself.
+
+1. Clone the repository and create the conda environment as described above
+   (steps 1-3). Note: `geomorph` and `mvMORPH` are not distributed on
+   conda-forge/bioconda, so after activating the environment, install them
+   from CRAN:
+```bash
+R -e 'install.packages(c("geomorph", "mvMORPH"))'
+```
+
+2. Install Jupyter and the R kernel into the same environment:
+```bash
+conda install -c conda-forge notebook r-irkernel
+R -e "IRkernel::installspec()"
+```
+
+3. Launch Jupyter from the project folder:
+```bash
+jupyter notebook
+```
+
+4. Open `phylomorphospace_workflow.ipynb`, confirm the **R** kernel is
+   selected (top right), then go to **Kernel → Restart & Run All**. The
+   notebook downloads the example dataset directly from this repository, so
+   no manual file upload is needed, every figure, table, and diagnostic
+   test generates automatically as the cells run.
+
+<br>
 <br>
 
 Directory's tree structure:
