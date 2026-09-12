@@ -5,8 +5,6 @@ channels:
   - defaults
 dependencies:
   - r-base=4.5.2
-  - r-geomorph=4.1.0
-  - r-mvmorph=1.2.1
   - r-phytools=2.5_2
   - r-rphylopars=0.3.10
   - r-vegan=2.7_3
@@ -18,3 +16,9 @@ dependencies:
   - bioconductor-ggtree=4.0.4
   - r-biocmanager=1.30.27
   - r-rrpp=2.1.2
+
+# geomorph and mvMORPH have no conda-forge/bioconda distribution
+# Install them from CRAN's version archive after activating this
+  # environment, to keep exact version pinning intact:
+  #   R -e 'remotes::install_version("geomorph", version = "4.1.0")'
+  #   R -e 'remotes::install_version("mvMORPH",  version = "1.2.1")'
