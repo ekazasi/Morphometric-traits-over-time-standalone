@@ -72,7 +72,7 @@ Stages:
 Follow these steps to run the simulation using the provided example dataset:
 1. Clone the repository:
 ```bash
-git clone https://github.com/ekazasi/Morphometric-traits-over-time
+git clone https://github.com/ekazasi/Morphometric-traits-over-time-standalone.git 
 ```
 2. Create the environment
 ```bash
