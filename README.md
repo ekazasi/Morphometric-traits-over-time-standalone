@@ -95,7 +95,7 @@ conda activate morphometrics_pipeline
 
 <br>
 
-## Running the Jupyter Notebook
+### Running the Jupyter Notebook
 
 Alongside the Shiny app, this repository's analysis is also available as a
 self-contained, reproducible Jupyter notebook
@@ -138,7 +138,11 @@ project/
 ├── app.R 
 ├── data/
 │   └── example_data.txt
-└── README.md
+├── README.md
+├── environment.yml
+├── LICENSE
+├── morphospace_workflow.ipynb
+
 ```
 <br>
 <br>
