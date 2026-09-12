@@ -119,7 +119,6 @@ directly in the notebook itself.
 2. Install Jupyter and the R kernel into the same environment:
 ```bash
 conda install -c conda-forge notebook r-irkernel
-R -e "IRkernel::installspec()"
 ```
 *This step is optional in case Jupyter is not installed*
 
