@@ -70,7 +70,7 @@ Stages:
 
 ## How to Replicate This Work
 Follow these steps to run the simulation using the provided example dataset:
-1. Clone the repository:
+1. Clone the repository and cd to the created folder:
 ```bash
 git clone https://github.com/ekazasi/Morphometric-traits-over-time-standalone.git 
 ```
@@ -88,11 +88,11 @@ conda activate morphometrics_pipeline
    CRAN versions. In the command line of your terminal run:
 
 ```bash
-R -e 'remotes::install_version("geomorph", version = "4.1.0"); remotes::install_version("mvMORPH", version = "1.2.1"); remotes::install_version("RRPP", version = "2.1.2")'
+R -e 'options(repos = c(CRAN = "https://cloud.r-project.org")); remotes::install_version("geomorph", version = "4.1.0"); remotes::install_version("mvMORPH", version = "1.2.1"); remotes::install_version("RRPP", version = "2.1.2")'
 ```
 
 
-5. Open RStudio and set the working directory to the project folder
+5. Open RStudio (rstudio command in the command line) and set the working directory to the project folder
     - In the top menu bar, go to Session
     - Select Set Working Directory
     - Click Choose Directory...
