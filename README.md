@@ -107,5 +107,8 @@ project/
 <br>
 <br>
 
+## Accessibility
+This repository and its data are fully public, no account, login, or API key is required to clone, download, or cite them.
+
 
 *This work was made for the purposes of a project assignment in the BINP29 course, "DNA Sequencing Informatics II" from the Bioinformatics master of Lund University.*
