@@ -88,7 +88,7 @@ conda activate morphometrics_pipeline
    CRAN versions. In the command line of your terminal run:
 
 ```bash
-R -e 'remotes::install_version("geomorph", version = "4.1.0"); remotes::install_version("mvMORPH", version = "1.2.1")'
+R -e 'remotes::install_version("geomorph", version = "4.1.0"); remotes::install_version("mvMORPH", version = "1.2.1"); remotes::install_version("RRPP", version = "2.1.2")'
 ```
 
 
