@@ -15,6 +15,7 @@ dependencies:
   - r-dplyr=1.2.0
   - bioconductor-ggtree=4.0.4
   - r-biocmanager=1.30.27
+  - r-remotes
 
 # geomorph, mvMORPH and RRPP have no conda-forge/bioconda distribution
 # Install them from CRAN's version archive after activating this
